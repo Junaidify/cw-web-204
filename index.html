@@ -4,53 +4,251 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<style>
-    .headerimg{
-        background-image: url(./health-personel-with-patient-in-nasser-hospital.tmb-768v.jpg);
-        background-size:cover;
-        background-position: center;
-        height:  700px;
-        width: 100%;
-          
-    }
-    .headerimg h1:nth-child(1){
-        text-align: center;
-        color: white;
-       font-size: 40px;
-       background-color: blue;
-       width: auto; 
-       margin-left: 20%;
-       margin-right: 20%; 
-       
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-    .headerimg h1:nth-child(2){
-        text-align: center;
-        color: white;
-       font-size: 40px;
-       background-color: rgb(10, 57, 186);
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .headerimg {
+            background-image: url(./health-personel-with-patient-in-nasser-hospital.tmb-768v.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 100%  
+            width: 100%;
+            padding-top: 450px;
+
+            
+        }
+        .headerimg h1:nth-child(1){
+            background-color: rgb(5, 70, 120);
+            width: auto; 
+       margin-left: 21%;
+       margin-right: 21%; 
+    
+        }
+        .headerimg h1:nth-child(2){
+            background-color:rgb(5, 70, 120);
        width: auto; 
        margin-left: 45%;
        margin-right: 44%; 
-       
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-    .headerimg button{
-        margin-left: 45%;
-        color: white;
-        background-color: rgb(17, 120, 237);
-        border: 0;
-        padding: 10px;
-        font-size: 20px;
-    }
-</style>
-<body>
-     <div class="headerimg">
-         <h1>Conflict in Israel and the occupied Palestinian </h1>
-         <h1>territory</h1>
-         <button>READ MORE</button>
+        }
+        
+        
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1000,
+  'wght' 1000,
+  'GRAD' 1000,
+  'opsz' 24
+  
+}
+.Body-cards{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
 
+}
+.material-symbols-outlined{
+    color:rgb(5, 70, 120);
+}
+.navigation-arrow{
+    color:rgb(5, 70, 120);
+    justify-content: space-between;
+    display: flex;
+     
+}
+.navigation-arrow h2:nth-child(2):hover{
+   color: rgb(105, 105, 209);
+}
+.navigation-arrow h2:nth-child(2) span:hover{
+   color: rgb(105, 105, 209);
+}
+ .cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    color: rgb(5, 70, 120);
+ }
+ .cards>div:hover{
+    border: 2px solid rgb(17, 113, 173);
+    background-color: rgb(203, 203, 216);
+ }
+ .contact{
+    margin-top: 100px;
+ }
+ .emargencies{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    color: rgb(5, 70, 120);
+ }
+ .elements .card:hover{
+    border: 2px solid blue;
+    background-color: rgb(203, 203, 216);
+ }
+ .card-b{
+    margin: 20px;
+ }
+ .card-b>h5:hover{
+    border: 2px solid;
+ }
+ @media(min-width : 12000px){
+     .bootstap{
+        max-width: 1100px;
+      margin: auto;
+     }
+ }
+ @media(max-width:1000px){
+    .emargencies{
+        display: grid;
+        
+    } 
+ }
+ @media(max-width:900px) {
+    .cards{
+        display: grid;
+    }
+    .card{
+        width: 500px;
+    }
+    
+ }
+ .bootstap{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+     margin: 10px;
+     
+ 
+ }
+         
+    </style>
+</head>
+
+<body>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      
+    <div class="bootstap"> 
+     <div> 
+     <div class="headerimg bg-primary text-white text-center">
+        <div> 
+         <h1>Conflict in Israel and the occupied Palestinian</h1>
+         <h1>territory</h1>
+         <button class="btn btn-lg btn-info" style="background-color:rgb(16, 76, 241) ; margin-bottom: 50px;">READ MORE</button>
+         
+        </div> 
      </div>
+    </div>
+ <div class="Body-cards"> 
+    <div class="navigation-arrow">
+        
+        <h2>Latest news from WHO</h2>
+        
+        <h2>All <span class="material-symbols-outlined">
+            arrow_right_alt
+            </span></h2> 
+    </div>
+    <hr style="border: 1px solid rgb(169, 169, 242);">
+    <div class="cards">
+        <div class="card" style="width: 20rem;">
+            <img src="./img1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"> 21 February | 2024 Statement</p>
+              <h5 class="card-text">Statement by Principals of the Inter-Agency Standing Committee (IASC): Civilians in Gaza in extreme peril while the world watches on</h5>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem;">
+            <img src="./2img.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">20 February 2024 | Statement </p>
+                <h5 class="card-text">WHO transfers critical patients out of Nasser Medical Complex, fears for safety of remaining patients</h5>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem;">
+            <img src="./3img.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">19 February 2024 | Joint News Release </p>
+                <h5 class="card-text">Children’s lives threatened by rising malnutrition in the Gaza Strip</h5>
+
+            </div>
+          </div>
+          <div class="card" style="width: 20rem;">
+            <img src="./4img.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"> 19 February 2024 | News release</p>
+                <h5 class="card-text">Member States consider proposed amendments to the International Health Regulations with discussions on equity to continue</h5>
+            </div>
+          </div>
+    </div>
+    <div> 
+    <div class="contact">
+        <div class="navigation-arrow">
+        
+            <h2>Latest news from WHO</h2>
+            
+            <h2>All <span class="material-symbols-outlined">
+                arrow_right_alt
+                </span></h2> 
+        </div>
+        <hr style="border: 1px solid rgb(169, 169, 242);">
+        <div class="emargencies">
+             <div class="elements">
+                 <div>
+                    <h5 style="margin-bottom: 20px;">Health situation in Gaza</h5>
+                 </div>
+                 <div>
+                    <div class="card" style="width: 21rem;">
+                        <img src="./img11.jpg" class="card-img-top" alt="...">
+                        <div class="card-b">
+                            <h5 >Learn more</h5>
+                         </div>
+                      </div>
+                 </div> 
+             </div>
+             <div class="elements">
+                <div>
+                    <h5 style="margin-bottom: 20px;">Health needs in Sudan</h5>
+                </div>
+                <div>
+                    <div class="card" style="width: 21rem;">
+                        <img src="./img12.jpg" class="card-img-top" alt="...">
+                        <div class="card-b">
+                            <h5>Call for urgent action</h5>
+                         </div>
+                      </div>
+                </div>
+             </div>
+             <div class="elements"> 
+                <div>
+                    <h5 style="margin-bottom: 20px;">Cholera outbreaks </h5>
+                </div>
+                <div>
+                    <div class="card" style="width: 21rem;">
+                        <img src="./img13.jpg" class="card-img-top" alt="...">
+                        <div class="card-b">
+                            <h5>Read the last situation repoart</h5>
+                         </div>
+                      </div>
+                </div>
+             </div>
+             <div class="elements">
+                <div>
+                    <h5 style="margin-bottom: 20px;">COVID-19</h5>
+                </div>
+                <div>
+                    <div class="card" style="width: 21rem;">
+                        <img src="./img14.jpg" class="card-img-top" alt="...">
+                        <div class="card-b">
+                            <h5>Read the latest update</h5>
+                         </div>
+                      </div>
+                </div>
+             </div>
+                 
+        </div>
+    </div>
+</div>
+</div>
+</div>
+ 
 </body>
 </html>
