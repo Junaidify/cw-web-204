@@ -1,0 +1,116 @@
+body {
+    background-color: rgb(233, 235, 238);
+    margin: 0;
+    padding: 0;
+  }
+#ab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  #ab:hover {
+    color: #193380;
+    i{
+      transform: rotate(180deg) translateY(1.5px);
+    }
+  }
+  
+  #ab::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -23px;
+    height: 100%;
+    width:0;
+    background-color: #274375;
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: width 1s;
+  }
+  
+  #ab:hover::before {
+    width: 150%;
+  }
+  #ab:hover + .dropdown1 {
+    display:flex;
+    flex-flow: column wrap;
+    align-content: start;
+  }
+  .dropdown1:active {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: start;
+    
+  }
+ 
+  .col>img{
+ padding: 100px 10px 100px 100px;
+  }
+  
+.nav{
+   background-color:#274375;
+}
+.dropdown{
+    background-color: lightblue;
+}
+.dropdown>button{
+    background-color: lightblue;
+    border: none;
+}
+.dropdown-menu>li:hover{
+    background-color: rgb(148, 148, 244);
+}
+.dropdown>button:hover{
+    background-color: rgb(177, 177, 220);
+}
+.search>i{
+    color:white;
+ 
+}
+
+.who{
+    display: flex;
+    align-items: center;
+padding-top: 50px;
+padding-left: 30px;
+}
+.nav>div>.dropdown1{
+    display: none;
+    flex-flow: column wrap;
+    align-content: start;
+    width: 100%;
+    position: absolute;
+    top: 55px;
+    
+    height:100vh;
+    background-color: #28336b;
+    transition: all 1s ease-in-out;
+    /* transform: translate(0px,119px); */
+    /* border: 2px solid red; */
+    a{
+      text-decoration: none;
+      color: white;
+      /* font-size: 12px; */
+      font-weight:100;
+    }
+    li{
+      list-style: none;
+      cursor: pointer;
+      margin: 3px;
+      width: fit-content;
+    }
+    li:hover{
+      text-decoration: underline;
+    }    
+    .dropdown1  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+}
