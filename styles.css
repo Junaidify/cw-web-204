@@ -61,14 +61,14 @@ body {
     background-color: lightblue;
 }
 .dropdown>button{
-    background-color: lightblue;
+    background-color: #0078D4;
     border: none;
 }
 .dropdown-menu>li:hover{
-    background-color: rgb(148, 148, 244);
+    background-color: #0078D4;
 }
 .dropdown>button:hover{
-    background-color: rgb(177, 177, 220);
+    background-color:#0078D4;
 }
 .search>i{
     color:white;
@@ -146,4 +146,16 @@ padding-bottom: 30px;
   overflow: hidden;
   text-decoration: none;
   text-transform: uppercase;
+}
+.ab::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -23px;
+  height: 100%;
+  width:0;
+  background-color: #274375;
+  transform: skewX(35deg);
+  z-index: -1;
+  transition: width 1s;
 }
