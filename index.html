@@ -4,75 +4,626 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cards</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css" />
+    <script src="path/to/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-family: "Roboto", sans-serif;
+      .card {
+        width: 30rem;
+        height: 20rem;
+        background-color: whitesmoke;
+        transition: border-color 0.3s ease;
+        border: 2px solid transparent;
       }
 
-      #malnutrition {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        margin: 2rem 5rem 0;
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          border-color: navy;
       }
 
-      .card:hover{
-       border: 6px solid grey;
-       background-color: grey;
+      .card-img {
+        height: 80%;
+      }
+
+      .card-body > p {
+        font-size: 1.2rem;
+        transform: translate(0, -20%);
       }
     </style>
   </head>
-  <body>
-    <div id="malnutrition">
-     
-      <div class="card"  style="width: 30rem; height: 20rem;  background-color: whitesmoke;">
-        <img
-          style="width: 100%; height: 80%; border-bottom: 4px solid rgb(122, 122, 204); "
-          src="https://cdn.who.int/media/images/default-source/health-topics/malnutrition/malnutrition-infant-somalia.jpg?sfvrsn=d988379b_3"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <p class="card-text" style=" font-weight: 900; font-size: 1.5rem; margin-top: 0.8rem; margin-left: 1rem;">
-         Listen to the latest podcast
-          </p>
+  <body style="box-sizing: border-box; margin: 0; padding: 0">
+    <div
+      id="card-container"
+      class="m-3"
+      style="width: 90%; transform: translate(5%, 0)"
+    >
+      <!--card-container on latest on emergencies-->
+
+      <div
+        class="d-flex justify-content-between font-weight-bold"
+        style="margin-bottom: -1.3rem"
+      >
+        <p style="font-size: 2rem">Latest on emergencies</p>
+        <p style="font-size: 2rem">
+          All <i class="fa-solid fa-arrow-right"></i>
+        </p>
+      </div>
+      <hr style="border-top: 4px solid black; margin-bottom: -1.4rem" />
+
+      <div
+        class="card-container-second d-flex justify-content-around flex-wrap"
+        style="margin-top: 3rem"
+      >
+        <!--first-card-container of latest on emergencies-->
+        <div>
+          <div
+            class="font-weight-bold ml-3"
+            style="font-size: 1.3rem; width: 23rem; background: none"
+          >
+            Health situation in Gaza
+          </div>
+
+          <div
+            class="card"
+            style="width: 23rem; height: 20rem; background-color: whitesmoke"
+          >
+            <img
+              style="height: 80%"
+              src="https://cdn.who.int/media/images/default-source/who_homepage/boy-in-unrwa-shelter-in-southern-gaza.tmb-sm.jpg?sfvrsn=a544fa21_15"
+              class="card-img-top"
+              alt="..."
+            />
+            <p
+              class="card-text font-weight-bold"
+              style="font-size: 1.2rem; transform: translate(5%, 40%)"
+            >
+              Read the fact sheet
+            </p>
+          </div>
+        </div>
+
+        <!--second-card-container of latest on emergencies-->
+        <div>
+          <div
+            class="font-weight-bold ml-3"
+            style="font-size: 1.3rem; width: 22rem; background: none"
+          >
+            Health need in sudan
+          </div>
+
+          <div
+            class="card"
+            style="width: 22rem; height: 20rem; background-color: whitesmoke"
+          >
+            <img
+              style="height: 80%"
+              src="https://cdn.who.int/media/images/default-source/who_homepage/cholera-response-in-sudan.tmb-sm.jpg?sfvrsn=3c7a38c0_3"
+              class="card-img-top"
+              alt="..."
+            />
+            <p
+              class="card-text font-weight-bold"
+              style="font-size: 1.2rem; transform: translate(5%, 40%)"
+            >
+              Call for urgent action
+            </p>
+          </div>
+        </div>
+
+        <!--third-card-container of latest on emergencies-->
+
+        <div>
+          <div
+            class="font-weight-bold ml-3"
+            style="font-size: 1.5rem; width: 22rem; background: none"
+          >
+            Cholera outbreaks
+          </div>
+
+          <div
+            class="card"
+            style="width: 22rem; height: 20rem; background-color: whitesmoke"
+          >
+            <img
+              style="height: 80%"
+              src="https://cdn.who.int/media/images/default-source/who_homepage/woman-and-child-in-cholera-treatment-centre-in-dr-congo.tmb-sm.jpg?sfvrsn=779debaa_3"
+              class="card-img-top"
+              alt="..."
+            />
+            <p
+              class="card-text font-weight-bold"
+              style="font-size: 1.2rem; transform: translate(5%, 40%)"
+            >
+              Read the latest situation reports
+            </p>
+          </div>
+        </div>
+
+        <!--fourth-card-container of latest on emergencies-->
+
+        <div>
+          <div
+            class="font-weight-bold ml-3"
+            style="font-size: 1.3rem; width: 22rem; background: none"
+          >
+            COVID-19
+          </div>
+
+          <div
+            class="card"
+            style="width: 22rem; height: 20rem; background-color: whitesmoke"
+          >
+            <img
+              style="height: 80%"
+              src="https://cdn.who.int/media/images/default-source/who_homepage/nurse-with-covid-vaccine-vial.tmb-sm.jpg?sfvrsn=f3c5d966_3"
+              class="card-img-top"
+              alt="..."
+            />
+            <p
+              class="card-text font-weight-bold"
+              style="font-size: 1.2rem; transform: translate(5%, 40%)"
+            >
+              Read the latest update
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="card" style="width: 30rem; height: 20rem;  background-color: whitesmoke;">
-        <img
-          style="width: 100%; height: 80%; border-bottom: 4px solid rgb(122, 122, 204); "
-          src="https://cdn.who.int/media/images/default-source/who-webinars-library/science-in-5---ep111---sun-and-skin-cancer.png?sfvrsn=83da266_3"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <p class="card-text" style=" font-weight: 900; font-size: 1.5rem; margin-top: 0.8rem; margin-left: 1rem;">
-         Listen to the latest podcast
-          </p>
+      <!--first-card-container-->
+      <div
+        class="card-container-second d-flex justify-content-around flex-wrap"
+        style="margin-top: 3rem"
+      >
+        <!--first-card-container's first container-->
+        <div>
+          <div
+            class="font-weight-bold"
+            style="
+              font-size: 1.5rem;
+              width: 30rem;
+
+              background: none;
+            "
+          >
+            malnutrition
+            <hr style="border-top: 2px solid black" />
+          </div>
+
+          <div
+            class="card"
+            style="width: 30rem; height: 20rem; background-color: whitesmoke"
+          >
+            <img
+              style="height: 80%"
+              src="https://cdn.who.int/media/images/default-source/health-topics/malnutrition/malnutrition-infant-somalia.jpg?sfvrsn=d988379b_3"
+              class="card-img-top"
+              alt="..."
+            />
+            <p
+              class="card-text font-weight-bold"
+              style="font-size: 1.2rem; transform: translate(2%, 40%)"
+            >
+              Read the fact sheet
+            </p>
+          </div>
+        </div>
+
+        <!--first-card-container's second container-->
+        <div>
+          <div
+            class="font-weight-bold"
+            style="
+              font-size: 1.5rem;
+              width: 30rem;
+
+              background: none;
+            "
+          >
+            Sun and skin cancer
+
+            <hr style="border-top: 2px solid black" />
+          </div>
+
+          <div
+            class="card"
+            style="width: 30rem; height: 20rem; background-color: whitesmoke"
+          >
+            <img
+              style="height: 80%"
+              src="https://cdn.who.int/media/images/default-source/who-webinars-library/science-in-5---ep111---sun-and-skin-cancer.png?sfvrsn=83da266_3"
+              class="card-img-top"
+              alt="..."
+            />
+            <p
+              class="card-text font-weight-bold"
+              style="font-size: 1.2rem; transform: translate(2%, 40%)"
+            >
+              Listen to the latest podcast
+            </p>
+          </div>
+        </div>
+
+        <!--first-card-container's third container-->
+
+        <div>
+          <div
+            class="font-weight-bold"
+            style="
+              font-size: 1.5rem;
+              width: 30rem;
+
+              background: none;
+            "
+          >
+            Pandemic accord discussions
+
+            <hr style="border-top: 2px solid black" />
+          </div>
+
+          <div
+            class="card"
+            style="width: 30rem; height: 20rem; background-color: whitesmoke"
+          >
+            <img
+              style="height: 80%"
+              src="https://www.who.int/images/default-source/departments/department-of-communications/inb7-meeting.jpg?sfvrsn=5522001b_24"
+              class="card-img-top"
+              alt="..."
+            />
+            <p
+              class="card-text font-weight-bold"
+              style="font-size: 1.2rem; transform: translate(2%, 40%)"
+            >
+              Watch the webcast
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="card" style="width: 30rem; height: 20rem;  background-color: whitesmoke;">
-        <img
-          style="width: 100%; height: 80%; border-bottom: 4px solid rgb(122, 122, 204); "
-          src="https://www.who.int/images/default-source/departments/department-of-communications/inb7-meeting.jpg?sfvrsn=5522001b_24"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <p class="card-text" style=" font-weight: 900; font-size: 1.5rem; margin-top: 0.8rem; margin-left: 1rem;">
-         Listen to the latest podcast
-          </p>
+      <!--second cards -->
+
+      <div
+        class="card-container-second d-flex justify-content-around flex-wrap"
+        style="margin-top: 3rem"
+      >
+        <!--second-card-container's first container-->
+        <div>
+          <div
+            class="font-weight-bold"
+            style="
+              font-size: 1.5rem;
+              width: 30rem;
+
+              background: none;
+            "
+          >
+            Director-general's Speeches
+
+            <hr style="border-top: 2px solid black" />
+          </div>
+
+          <div
+            class="card"
+            style="width: 30rem; height: 20rem; background-color: whitesmoke"
+          >
+            <img
+              style="height: 80%"
+              src="https://www.who.int/images/default-source/departments/department-of-communications/inb7-meeting.jpg?sfvrsn=5522001b_24"
+              class="card-img-top"
+              alt="..."
+            />
+            <p
+              class="card-text font-weight-bold"
+              style="font-size: 1.2rem; transform: translate(2%, 40%)"
+            >
+              Read a speeches
+            </p>
+          </div>
+        </div>
+
+        <!--card-container's second container-->
+        <div>
+          <div
+            class="font-weight-bold"
+            style="
+              font-size: 1.5rem;
+              width: 30rem;
+
+              background: none;
+            "
+          >
+            Publication
+
+            <hr style="border-top: 2px solid black" />
+          </div>
+
+          <div
+            class="card"
+            style="width: 30rem; height: 20rem; background-color: whitesmoke"
+          >
+            <img
+              style="height: 80%"
+              src="https://cdn.who.int/media/images/default-source/publications/publications-hero-image-thumb.jpg?sfvrsn=8174ac48_7"
+              class="card-img-top"
+              alt="..."
+            />
+            <p
+              class="card-text font-weight-bold"
+              style="font-size: 1.2rem; transform: translate(2%, 40%)"
+            >
+              Find a publication
+            </p>
+          </div>
+        </div>
+
+        <!--card-container's third container-->
+
+        <div>
+          <div
+            class="font-weight-bold"
+            style="
+              font-size: 1.5rem;
+              width: 30rem;
+
+              background: none;
+            "
+          >
+            Preventing sexual misconduct
+
+            <hr style="border-top: 2px solid black" />
+          </div>
+
+          <div
+            class="card"
+            style="width: 30rem; height: 20rem; background-color: whitesmoke"
+          >
+            <img
+              style="height: 80%"
+              src="https://cdn.who.int/media/images/default-source/initiatives/prseah/whatsapp-image-2021-08-21-at-17.17.52-(3).jpeg?sfvrsn=826d7380_5"
+              class="card-img-top"
+              alt="..."
+            />
+            <p
+              class="card-text font-weight-bold"
+              style="font-size: 1.2rem; transform: translate(2%, 40%)"
+            >
+              Learn how Who is trackling sexual misconduct
+            </p>
+          </div>
         </div>
       </div>
-  c
+
+      <!--card-container-third-->
+
+      <div
+        id="card-container-third"
+        class="d-grid gap-2 grid-cols-2"
+        style="
+          display: grid;
+          grid-template-columns: 40% 60%;
+          margin: 5rem 0 0 1rem;
+        "
+      >
+        <div
+          class="d-flex justify-content-around flex-wrap"
+          style="margin-top: 3rem"
+        >
+          <!--publication content and all -->
+
+          <div style="width: 95%">
+            <div
+              style="
+                color: orrange;
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.8rem;
+                font-weight: bold;
+              "
+            >
+              <p>Publication</p>
+              <p>All <i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+            <hr style="border-top: 2px solid black; margin-top: -0.2rem" />
+          </div>
+
+          <!--card-container-third's first-box-->
+          <div class="card" style="width: 18rem; height: 16rem">
+            <img
+              style="height: 70%"
+              src="https://cdn.who.int/media/images/default-source/who-campaigns/world-hearing-day/whd-2024/web-banner.png?sfvrsn=87920212_10"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text font-weight-bold" style="margin: 0">
+                World Hearing Day
+              </p>
+              <p class="card-text font-weight-bold" style="font-size: small">
+                3 March 2024
+              </p>
+            </div>
+          </div>
+
+          <!--card-container-third's second-box-->
+
+          <div class="card" style="width: 18rem; height: 16rem">
+            <img
+              style="height: 70%"
+              src="https://cdn.who.int/media/images/default-source/who-campaigns/world-tb-day-2024/unhlm2024.jpg?sfvrsn=2db1d603_6"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text font-weight-bold" style="margin: 0">
+                World Hearing Day
+              </p>
+              <p class="card-text font-weight-bold" style="font-size: small">
+                3 March 2024
+              </p>
+            </div>
+          </div>
+
+          <!--card-container-third's third-box //   bigger one -->
+
+          <div style="margin-top: 3rem">
+            <div
+              class="card"
+              style="height: 26rem; width: 100%; background-color: whitesmoke"
+            >
+              <img
+                style="height: 80%; width: 100%"
+                src="https://cdn.who.int/media/images/default-source/who-campaigns/who75/who75-hero-banner.png?sfvrsn=df85f627_22"
+                class="card-img-top"
+                alt="..."
+              />
+              <p
+                class="card-text font-weight-bold"
+                style="font-size: 1.2rem; transform: translate(2%, 40%)"
+              >
+                Learn how Who is trackling sexual misconduct
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--card-container-third's second container-->
+
+        <div style="margin-left: 10%; margin-top: 2.8rem">
+          <div style="width: 95%">
+            <div
+              style="
+                color: orrange;
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.8rem;
+                font-weight: bold;
+              "
+            >
+              <p>Events</p>
+              <p>All <i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+            <hr style="border-top: 2px solid black; margin-top: -0.2rem" />
+          </div>
+
+          <!--card-container-third's second container's first card -->
+
+          <div class="card mt-2" style="width: 95%; height: 10.5rem">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  style="height: 85%; width: 100%"
+                  src="https://www.who.int/images/default-source/departments/i-mcm/cso_22_feb_24.jpg?sfvrsn=a2f8462a_2"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8 mt-4">
+                <p
+                  class="card-text font-weight-bold"
+                  style="color: rgb(11, 11, 112); font-size: 1.2rem; width: 98%"
+                >
+                  Resilient and scalable MCM ecosystem: CSOs engagement forum
+                  for advancing timely and equitable access to medical
+                  countermeasures against pandemic threats
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--card-container-third's second container's second card -->
+
+          <div class="card mt-3" style="width: 95%; height: 10.5rem">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  style="height: 85%; width: 100%"
+                  src="https://www.who.int/images/default-source/departments/reproductive-health/abortion/webinar-medical-abortion.png?sfvrsn=5c021a1a_4"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8 mt-4">
+                <p
+                  class="card-text font-weight-bold"
+                  style="color: rgb(11, 11, 112); font-size: 1.2rem; width: 98%"
+                >
+                  Resilient and scalable MCM ecosystem: CSOs engagement forum
+                  for advancing timely and equitable access to medical
+                  countermeasures against pandemic threats
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--card-container-third's second container's third card-->
+
+          <div class="card mt-3" style="width: 95%; height: 10.5rem">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  style="height: 85%; width: 100%"
+                  src="https://www.who.int/images/default-source/departments/i-mcm/cso_22_feb_24.jpg?sfvrsn=a2f8462a_2"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8 mt-4">
+                <p
+                  class="card-text font-weight-bold"
+                  style="color: rgb(11, 11, 112); font-size: 1.2rem; width: 98%"
+                >
+                  Resilient and scalable MCM ecosystem: CSOs engagement forum
+                  for advancing timely and equitable access to medical
+                  countermeasures against pandemic threats
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--card-container-third's second container's fourth card-->
+
+          <div class="card mt-3" style="width: 95%; height: 10.5rem">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  style="height: 85%; width: 100%"
+                  src="https://www.who.int/images/default-source/departments/i-mcm/cso_22_feb_24.jpg?sfvrsn=a2f8462a_2"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8 mt-4">
+                <p
+                  class="card-text font-weight-bold"
+                  style="color: rgb(11, 11, 112); font-size: 1.2rem; width: 98%"
+                >
+                  Resilient and scalable MCM ecosystem: CSOs engagement forum
+                  for advancing timely and equitable access to medical
+                  countermeasures against pandemic threats
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
