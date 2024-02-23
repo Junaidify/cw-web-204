@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#parent_container > #footer {
+  height: 655.13px;
+  width: 1320px;
+  background-color: #0096ff;
+  position: relative;
+  left: 100px;
+  border: 2px solid;
+}
+#parent_container > #footer > #footer_content_one {
+  height: 185.13px;
+  width: 1290px;
+  position: relative;
+  display: flex;
+  border: 2px solid;
+  left: 15px;
+}
+#parent_container > #footer > #footer_content_one > div:nth-child(1) {
+  position: absolute;
+  width: 372.76px;
+  height: 26px;
+  top: 94.31px;
+  left: 80px;
+  font-size: 19.69px;
+  font-weight: 500;
+}
+#parent_container > #footer > #footer_content_one > div:nth-child(2) {
+  position: absolute;
+  width: 74.72px;
+  height: 31.88px;
+  top: 84.06px;
+  left: 1045.48px;
+  font-size: 16.2px;
+  font-weight: 500;
+}
+#parent_container > #footer > footer_card_second {
+  height: 439.98px;
+  width: 390px;
+}/*# sourceMappingURL=input.css.map */
