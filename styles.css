@@ -1,0 +1,73 @@
+.trips {
+  margin-top: 100px;
+}
+.trips > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}
+.trips > div:nth-child(1) > p {
+  border: 1px solid rgb(205, 201, 201);
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.trips > div:nth-child(2) {
+  gap: 30px;
+  display: flex;
+}
+.trips > div:nth-child(2) > div {
+  border: 1px solid;
+}
+.trips > div:nth-child(2) > div > div:nth-child(2) {
+  display: flex;
+}
+
+body {
+  margin: 50px;
+}
+
+.figma {
+  font-weight: 151.72px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.offers > div {
+  justify-content: space-between;
+  display: flex;
+}
+
+.Discount {
+  display: flex;
+  margin: 10px;
+  gap: 50px;
+}
+.Discount > div:nth-child(1) {
+  display: flex;
+  gap: 10px;
+}
+.Discount > div:nth-child(1) > div > p:nth-child(1) {
+  color: orangered;
+}
+.Discount > div:nth-child(2) {
+  display: flex;
+  gap: 10px;
+}
+.Discount > div:nth-child(2) > div > p:nth-child(1) {
+  color: orangered;
+}
+.Discount > div:nth-child(3) {
+  display: flex;
+  gap: 10px;
+}
+.Discount > div:nth-child(3) > div > p:nth-child(1) {
+  color: orangered;
+}
+.Discount > div:nth-child(4) {
+  display: flex;
+  gap: 10px;
+}
+.Discount > div:nth-child(4) > div > p:nth-child(1) {
+  color: orangered;
+}
+
+/*# sourceMappingURL=styles.css.map */
