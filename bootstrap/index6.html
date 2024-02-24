@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Footer</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+  .col-md-3 {
+    padding: 15px;
+    background-color: #0c2b64 ;
+    border: none; 
+  }
+
+  .heading>h4 {
+    font-weight: bolder;
+    color: white;
+  }
+
+  .subheadings>p {
+    font-weight: 500;
+    color: white;
+  } 
+
+  .heading h4 span,
+  .subheadings p span,.footer-img {
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+
+  .heading h4 span:hover,.footer-img:hover,.subheadings button:hover,
+  .subheadings p span:hover {
+    background-color: #473dcf;
+  }
+
+  /* .container-fluid {
+    background-color: #0c2b64 ; 
+    position: relative;
+    padding-bottom: 100px; 
+  } */
+
+  .footer-img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100px;
+    width: 300px;
+    margin-bottom: 50px;
+  }
+
+  .icon div {
+    height: 30px;
+    width: 50px;
+    background-color: #274375;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon i {
+    color: white;
+   
+  }
+
+  .icon div:hover {
+    background-color: #7588aa;
+  }
+  
+  .whofooter{
+    height: 30px;
+   }
+   
+  .whofooter:hover,
+  .privacy:hover {
+    background-color: #7588aa;
+  }
+
+  .footerbottom {
+    background-color: #274375 ;
+    padding: 25px;
+  }
+  .subheadings button{
+   font-weight: bolder;
+   color: white;
+   border: none;
+   background-color: #0c2b64;
+   width: 200px;
+   height: 40px;
+   margin-top: 50px;
+  }
+
+  
+</style>
+</head>
+<body>
+<div class="container-fluid p-5" style="padding-bottom: 100px;  background-color: #0c2b64 ;position: relative; ">
+  <div class="row">
+    <div class="col-md-3">
+      <!-- Main Heading -->
+      <div class="heading">
+        <h4><span>Regions</span></h4>
+        <!-- Subheadings -->
+        <div class="subheadings">
+          <p><span>Africa</span></p>
+          <p><span>Americas</span></p>
+          <p><span>Eastern Mediterranean</span></p>
+          <p><span>Europe</span></p>
+          <p><span>South-East Asia</span></p>
+          <p><span>Western Pacific</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <!-- Main Heading -->
+      <div class="heading">
+        <h4><span>Policies</span></h4>
+        <!-- Subheadings -->
+        <div class="subheadings">
+          <p><span>Cyber security</span></p>
+          <p><span>Ethics</span></p>
+          <p><span>Permissions and licensing</span></p>
+          <p><span>Preventing sexual exploitation</span></p>
+          <p><span>Terms of use</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <!-- Main Heading -->
+      <div class="heading">
+        <h4><span>About us</span></h4>
+        <!-- Subheadings -->
+        <div class="subheadings">
+          <p><span>Careers</span></p>
+          <p><span>Library</span></p>
+          <p><span>Procurement</span></p>
+          <p><span>Publications</span></p>
+          <p><span>Frequently asked questions</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <!-- Main Heading -->
+      <div class="heading">
+        <h4><span>Contact us</span></h4>
+        <!-- Subheadings -->
+        <div class="subheadings">
+          <span><button>Report misconduct</button></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Image -->
+  <div style="margin-top: 150px; ">
+    <img src="images/who.svg" alt="Footer Image" class="footer-img" >
+  </div>
+</div>
+
+<div class="container-fluid d-flex justify-content-between align-items-center flex-wrap footerbottom" >
+  <div class="privacy text-center font-weight-bold text-white" style="width: 120px; cursor: pointer;">
+    Privacy policy
+  </div>
+
+  <!-- Icon -->
+  <div class="icon d-flex">
+    <div><a href="#"><i class="fab fa-youtube" ></i></a></div>
+    <div><a href="#"><i class="fab fa-twitter"></i></a></div>
+    <div><a href="#"><i class="fab fa-instagram"></i></a></div>
+    <div><a href="#"><i class="fab fa-facebook"></i></a></div>
+    <div><a href="#"><i class="fab fa-linkedin"></i></a></div>
+    <div><a href="#"><i class="fab fa-snapchat"></i></a></div>
+    <div><a href="#"><i class="fab fa-tiktok"></i></a></div>
+  </div>
+
+  <!-- Text -->
+  <div class="text-white font-weight-bold"  style="display: flex; gap: 10px; ">
+    <div style="display: flex; align-items: center;">© 2024</div>
+    <div class="whofooter" style="display: flex;align-items: center;cursor: pointer;">WHO</div>
+  </div>
+</div>
+
+</body>
+</html>
