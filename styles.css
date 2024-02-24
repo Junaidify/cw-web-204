@@ -12,14 +12,117 @@
   border-radius: 10px;
 }
 .trips > div:nth-child(2) {
+  padding: 20px;
   gap: 30px;
   display: flex;
 }
 .trips > div:nth-child(2) > div {
   border: 1px solid;
+  border-radius: 10px;
+}
+.trips > div:nth-child(2) > div > hr {
+  margin: 10px;
 }
 .trips > div:nth-child(2) > div > div:nth-child(2) {
   display: flex;
+}
+.trips > div:nth-child(2) > div > div:nth-child(1) img {
+  width: 335px;
+  border-radius: 10px;
+}
+.trips > div:nth-child(2) > div > div:nth-child(1) p {
+  margin-left: 50px;
+}
+.trips > div:nth-child(2) > div > div:nth-child(1) h4 {
+  margin: 10px;
+}
+.trips > div:nth-child(2) > div > div:nth-child(1) h5 {
+  text-align: center;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.foot > p:nth-child(2) span {
+  font-size: 20px;
+  font-weight: 100px;
+}
+
+#circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  margin-left: 280px;
+  margin-top: 220px;
+}
+
+.travel {
+  background-image: url(./image\ \(5\).png);
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+.travel > div {
+  margin: 100px;
+}
+.travel > div:nth-child(1) button {
+  background-color: #EB662B;
+  width: 200px;
+  height: 50px;
+  border: 0;
+  border-radius: 10px;
+  margin-top: 50px;
+  color: white;
+}
+.travel > div > div {
+  background-color: white;
+  width: 150px;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+}
+.travel > div > div:nth-child(1) {
+  padding: 30px;
+}
+.travel > div > div:nth-child(1) h1 {
+  color: #EB662B;
+}
+.travel > div > div:nth-child(2) {
+  padding: 30px;
+  margin-top: 20px;
+}
+.travel > div > div:nth-child(2) h1 {
+  color: #EB662B;
+}
+.travel > div:nth-child(3) {
+  background-color: white;
+  width: 400px;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+}
+.travel > div:nth-child(3) h1 {
+  color: #EB662B;
+}
+
+@media (min-width: 1200px) {
+  .figma {
+    max-width: 1100px;
+    margin: auto;
+  }
+}
+.figma {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
