@@ -38,14 +38,38 @@
 .nav {
   background-color: white;
 } 
+@media (min-width: 1320px) {
+  .nav {
+    max-width: 1320px;
+    margin: auto;
+    // border: 1px solid red;
+  }
+}
+@media (min-width: 1320px) {
+  #container_1 {
+    max-width: 1320px;
+   margin: auto;
+    
+    // border: 1px solid red;
+  }
+}
+@media (min-width: 1920px) {
+  #container_1 {
+    max-width: 1320px;
+   margin:auto;
+    
+    // border: 1px solid red;
+  }
+}
 /* next container */
 #container_1 {
+//  border:1px solid black;
   width: 1320px;
   height: 640px;
-  top: 88px;
-  margin-left: 50px;
-  margin-top: 40px;
-  padding: 30px, 15px, 0px, 15px;
+  margin-top: 20px;
+
+ box-sizing: border-box;
+  
 }
 
 #nav2 {
@@ -53,10 +77,11 @@
   justify-content: space-between;
   width: 1230px;
   height: 80px;
-  top: 30px;
+  margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 60px;
-  padding: 10px, 10px, 10px, 10px;
+  margin-left: 40px;
+  margin-right: 20px;
+  padding: 10px 10px 10px 10px;
   border-radius: 22px;
   border: 1px solid wheat;
 }
@@ -69,7 +94,7 @@
   margin-top: 10px;
   left: 10px;
   margin-left: 20px;
-  padding: 5px, 10px, 5px, 10px;
+  padding: 5px 10px 5px 10px;
 }
 
 .where {
@@ -77,7 +102,8 @@
   align-items: center;
   top: 10px;
   left: 10px;
-  padding: 5px, 10px, 10px, 10px;
+  padding: 5px 10px 10px 10px;
+  
 }
 
 .btn {
@@ -87,18 +113,29 @@
   height: 60px;
   top: 10px;
   left: 1143.05px;
-  padding: 20px, 30.8px, 20px, 31px;
+  padding: 20px 30.8px 20px 31px;
   border-radius: 12px;
   border: none;
   margin-top: 10px;
   margin-left: 300px;
   margin-right: 20px;
 }
+.square {
+  width: 40px;
+  height: 40px;
+ 
+  padding: 13px 12.8px 13px 13px;
+  position: relative;
+  border-radius: 20px;
+  background-color: #fef7f4;
+}
+
 
 /* lower part1 */
 .section1 {
   display: flex;
-  margin-left: 70px;
+  margin-left: 40px;
+ margin-bottom: 30px;
 }
 
 .section_1 {
@@ -113,7 +150,7 @@
   height: 40px;
   top: 220px;
   left: 1px;
-  padding: 13px, 12.8px, 13px, 13px;
+ 
   position: relative;
   border-radius: 50%;
   background-color: #fef7f4;
@@ -143,11 +180,10 @@
   position: relative;
   width: 40px;
   height: 40px;
-  top: 100%;
-  left: 500px;
+  left: 550px;
   border-radius: 50%;
   background-color: #fef7f4;
-  top: 120px;
+  top: 220px;
 }
 
 .section_2 {
