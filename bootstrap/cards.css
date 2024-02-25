@@ -1,0 +1,22 @@
+.card {
+    width: 30rem;
+    height: 20rem;
+    background-color: whitesmoke;
+    transition: border-color 0.3s ease;
+    border: 2px solid transparent;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-color: navy;
+  }
+
+  .card-img {
+    height: 80%;
+  }
+
+  .card-body > p {
+    font-size: 1.2rem;
+    transform: translate(0, -20%);
+  }
