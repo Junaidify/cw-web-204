@@ -13,7 +13,7 @@ body {
   font-weight: 700;
   text-align: left;
   padding: 0;
-  margin: 0;
+  margin-top: 5px;
 }
 
 .destination > .container {
@@ -22,6 +22,16 @@ body {
   padding-top: 5px;
   padding-left: 15px;
   padding-right: 15px;
+  border: 1px solid;
+}
+.destination > .container > p {
+  position: relative;
+  top: -35px;
+  left: 1240px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0em;
 }
 
 @media (min-width: 1320px) {
@@ -41,9 +51,13 @@ body {
 .cardcontainer {
   margin-top: 45px;
   width: auto;
+  border: 2px solid black;
   display: flex;
   box-sizing: border-box;
-  gap: 36px;
+  gap: 32px;
+}
+.cardcontainer > .cards {
+  border: 1px solid;
 }
 .cardcontainer > .cards > div {
   width: 190px;
@@ -101,11 +115,16 @@ body {
 }
 
 .attraction {
+  border: 1px solid;
   margin-top: 115px;
   display: flex;
   padding-top: 5px;
+  flex-direction: column;
 }
-.attraction > h2 {
+.attraction > .atttop {
+  display: flex;
+}
+.attraction > .atttop > h2 {
   font-family: Inter;
   font-size: 30px;
   font-weight: 700;
@@ -113,21 +132,28 @@ body {
   text-align: left;
   margin: 0px;
 }
-.attraction > span {
+.attraction > .atttop > p {
+  width: 44.79px;
+  height: 28.13px;
+  margin-left: 991px;
   font-family: Inter;
   font-size: 14px;
   font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 .attraction > .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 95px;
+  margin-top: 45px;
   width: 100%;
-  margin-left: -228px;
+  margin-left: 0px;
   row-gap: 30px;
 }
 .attraction > .grid > div {
   display: flex;
+  border: 1px solid;
 }
 .attraction > .grid > div > img {
   width: 100px;
@@ -138,6 +164,7 @@ body {
   margin-left: 30px;
   margin-top: 28.38px;
   margin-bottom: 27.62px;
+  border: 1px solid;
   width: auto;
   display: flex;
   flex-direction: column;
@@ -190,12 +217,14 @@ body {
   background-image: url(images/customer\ reviews\ background.png);
   width: auto;
   margin-top: 105px;
+  border: 1px solid;
   box-sizing: border-box;
   padding: 120px 300px 120px 300px;
   background-position: center;
 }
 .customer_review .container {
   width: 100%;
+  border: 1px solid;
   box-sizing: border-box;
   padding-bottom: 16.99px;
 }
@@ -212,19 +241,25 @@ body {
   flex-direction: column;
   padding-left: 12.8px;
   padding-right: 12.61px;
+  border: 1px solid;
   position: relative;
 }
-.customer_review .container > div > img:nth-of-type(2) {
+.customer_review .container > div > .reviewimage {
+  display: flex;
+  border: 1px solid red;
+  justify-content: center;
+}
+.customer_review .container > div > .reviewimage > img:nth-of-type(1) {
+  width: 46px;
+  height: 46px;
+  z-index: 2;
+  position: relative;
+}
+.customer_review .container > div > .reviewimage > img:nth-of-type(2) {
   width: 100px;
   height: 100px;
   margin-top: 10px;
-  align-self: center;
-}
-.customer_review .container > div > img:nth-of-type(1) {
-  width: 46px;
-  height: 46px;
-  position: absolute;
-  left: 310px;
+  margin-left: -30px;
 }
 .customer_review .container > div > p:nth-of-type(1) {
   margin-top: 60px;
@@ -236,10 +271,11 @@ body {
   text-align: center;
   color: #EB662B;
 }
-.customer_review .container > div > div:nth-of-type(1) {
+.customer_review .container > div > div:nth-of-type(2) {
+  border: 1px solid;
   box-sizing: border-box;
 }
-.customer_review .container > div > div:nth-of-type(1) > p {
+.customer_review .container > div > div:nth-of-type(2) > p {
   font-family: Inter;
   font-size: 20px;
   font-weight: 500;
@@ -248,11 +284,12 @@ body {
   text-align: center;
   margin: 0;
 }
-.customer_review .container > div > div:nth-of-type(2) {
+.customer_review .container > div > div:nth-of-type(3) {
   margin-top: 28.5px;
+  border: 1px solid;
   box-sizing: border-box;
 }
-.customer_review .container > div > div:nth-of-type(2) > p {
+.customer_review .container > div > div:nth-of-type(3) > p {
   font-family: Inter;
   font-size: 16px;
   font-weight: 500;
@@ -260,11 +297,12 @@ body {
   text-align: center;
   margin: 0;
 }
-.customer_review .container > div > div:nth-of-type(3) {
+.customer_review .container > div > div:nth-of-type(4) {
   margin-top: 2.6px;
+  border: 1px solid;
   box-sizing: border-box;
 }
-.customer_review .container > div > div:nth-of-type(3) > p {
+.customer_review .container > div > div:nth-of-type(4) > p {
   font-family: Inter;
   font-size: 14px;
   font-weight: 400;
@@ -272,7 +310,7 @@ body {
   text-align: center;
   margin: 0;
 }
-.customer_review .container > div > div:nth-of-type(4) {
+.customer_review .container > div > div:nth-of-type(5) {
   width: 100%;
   display: flex;
   gap: 8px;
@@ -280,38 +318,33 @@ body {
   height: auto;
   justify-content: center;
 }
-.customer_review .container > div > div:nth-of-type(4) > div:nth-of-type(1) {
+.customer_review .container > div > div:nth-of-type(5) > div:nth-of-type(1) {
   width: 18px;
   height: 6px;
   border-radius: 20px;
   background-color: black;
 }
-.customer_review .container > div > div:nth-of-type(4) > div:nth-of-type(2) {
+.customer_review .container > div > div:nth-of-type(5) > div:nth-of-type(2) {
   width: 6px;
   height: 6px;
   border-radius: 20px;
   background-color: black;
 }
-.customer_review .container > div > div:nth-of-type(4) > div:nth-of-type(3) {
+.customer_review .container > div > div:nth-of-type(5) > div:nth-of-type(3) {
   width: 6px;
   height: 6px;
   border-radius: 20px;
   background-color: black;
 }
-.customer_review .container > div > div:nth-of-type(4) > div:nth-of-type(4) {
+.customer_review .container > div > div:nth-of-type(5) > div:nth-of-type(4) {
   width: 6px;
   height: 6px;
   border-radius: 20px;
   background-color: black;
 }
-.customer_review .container > div > div:nth-of-type(4) > div:nth-of-type(5) {
+.customer_review .container > div > div:nth-of-type(5) > div:nth-of-type(5) {
   width: 6px;
   height: 6px;
   border-radius: 20px;
   background-color: black;
-}
-
-.above {
-  width: 46px;
-  height: 46px;
 }/*# sourceMappingURL=styles.css.map */
