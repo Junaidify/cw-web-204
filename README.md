@@ -21,10 +21,10 @@
    - Akhilesh Negi
 
   ## Directory Structure
-  My app/
-   ├─ frontend/
-   |  ├─ Bootstrap
-   |  ├─ Figma
+  ![WhatsApp Image 2024-02-26 at 17 17 25_8ff7b7f5](https://github.com/Junaidify/cw-web-204/assets/157748393/f8fc4162-67c7-4a6a-8719-bd682acc9037)
+
+
+
 
   ## Video Walkthrough of the project:
        https://www.youtube.com/watch?v=2UMInOVW8iQ
@@ -86,7 +86,7 @@ Here are some navigational instructions to use:
 
  # WHO(World Health Organization):
 - Navbar: ![WhatsApp Image 2024-02-26 at 16 23 04_c69feea3](https://github.com/Junaidify/cw-web-204/assets/157748393/023c51ba-6e4f-4a92-b775-b3db53d577a8)
-- Cards: ![WhatsApp Image 2024-02-26 at 16 25 16_fb817c20](https://github.com/Junaidify/cw-web-204/assets/157748393/2db58998-443a-4201-8a55-2d70ca2edf25)
+- Cards:  ![WhatsApp Image 2024-02-26 at 16 25 16_fb817c20](https://github.com/Junaidify/cw-web-204/assets/157748393/2db58998-443a-4201-8a55-2d70ca2edf25)
 - Footer: ![WhatsApp Image 2024-02-26 at 16 25 29_457ffff2](https://github.com/Junaidify/cw-web-204/assets/157748393/3754aa35-4999-4c8f-b374-bd79f3ed96af)
 
 
